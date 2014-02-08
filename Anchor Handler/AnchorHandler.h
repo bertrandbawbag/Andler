@@ -12,7 +12,7 @@
 @interface AnchorHandler : SKSpriteNode
 
 @property (nonatomic) NSString *dpMode;
-@property CGPoint dpHoldingMode;
+@property CGPoint dpHoldingPosition;
 @property float maxThrustForce;
 
 -(id)initWithImageNamed:(NSString *)name position: (CGPoint) position;
@@ -22,7 +22,7 @@
 -(void)didEvaluateActions;
 
 -(void) transitToPoint: (CGPoint) point;
--(void) holdStationAtPoint: (CGPoint) point;
+-(void) holdStationAtPoint;
 
 
 @end

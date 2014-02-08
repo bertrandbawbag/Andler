@@ -14,8 +14,10 @@
 {
     if ([super initWithImageNamed:name]) {
         self.position = position;
-        self.xScale = 0.5;
-        self.yScale = 0.5;
+        self.xScale = 0.4;
+        self.yScale = 0.4;
+        self.dpMode = @"holdStation";
+        self.dpHoldingPosition = self.position;
         [self setUpPhysics];
 
     }
@@ -32,11 +34,13 @@
 }
 -(void)update:(CFTimeInterval)currentTime
 {
-    
+    if ([self.dpMode isEqualToString:@"holdStation"]) {
+        [self holdStationAtPoint];
+    }
 }
 -(void)didSimulatePhysics
 {
-    self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
+    
 }
 -(void)didEvaluateActions
 {
@@ -47,14 +51,16 @@
 {
     
 }
--(void) holdStationAtPoint: (CGPoint) point
+-(void) holdStationAtPoint
 {
-    
+    // applies force in the opposite direction that the vessel is drifting away from dpHoldingPosition
+    CGVector offset = CGVectorMake(self.dpHoldingPosition.x - self.position.x, self.dpHoldingPosition.y - self.position.y);
+    [self.physicsBody applyForce:offset];
 }
 
 -(void) setUpPhysics
 {
-    
+    self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
 }
 
 @end
