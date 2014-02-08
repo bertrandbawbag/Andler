@@ -10,6 +10,18 @@
 
 @implementation AnchorHandler
 
+-(id)initWithImageNamed:(NSString *)name position: (CGPoint) position;
+{
+    if ([super initWithImageNamed:name]) {
+        self.position = position;
+        self.xScale = 0.5;
+        self.yScale = 0.5;
+        [self setUpPhysics];
+
+    }
+    return self;
+}
+
 -(id)initWithColor:(UIColor *)color size:(CGSize)size position:(CGPoint) position
 {
     if ([super initWithColor:color size:size]) {

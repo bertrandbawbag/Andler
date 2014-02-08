@@ -15,6 +15,7 @@
 @property CGPoint dpHoldingMode;
 @property float maxThrustForce;
 
+-(id)initWithImageNamed:(NSString *)name position: (CGPoint) position;
 -(id)initWithColor:(UIColor *)color size:(CGSize)size position:(CGPoint) position;
 -(void)update:(CFTimeInterval)currentTime;
 -(void)didSimulatePhysics;
