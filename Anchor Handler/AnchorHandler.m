@@ -10,4 +10,38 @@
 
 @implementation AnchorHandler
 
+-(id)initWithColor:(UIColor *)color size:(CGSize)size position:(CGPoint) position
+{
+    if ([super initWithColor:color size:size]) {
+        [self setUpPhysics];
+    }
+    return self;
+}
+-(void)update:(CFTimeInterval)currentTime
+{
+    
+}
+-(void)didSimulatePhysics
+{
+    
+}
+-(void)didEvaluateActions
+{
+    
+}
+
+-(void) transitToPoint: (CGPoint) point
+{
+    
+}
+-(void) holdStationAtPoint: (CGPoint) point
+{
+    
+}
+
+-(void) setUpPhysics
+{
+    
+}
+
 @end
