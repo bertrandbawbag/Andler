@@ -13,6 +13,7 @@
 -(id)initWithColor:(UIColor *)color size:(CGSize)size position:(CGPoint) position
 {
     if ([super initWithColor:color size:size]) {
+        self.position = position;
         [self setUpPhysics];
     }
     return self;
@@ -23,7 +24,7 @@
 }
 -(void)didSimulatePhysics
 {
-    
+    self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
 }
 -(void)didEvaluateActions
 {
