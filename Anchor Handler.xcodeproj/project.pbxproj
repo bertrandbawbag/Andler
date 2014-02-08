@@ -16,13 +16,20 @@
 		2E2C891F18A68FE4005EA55C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C891E18A68FE4005EA55C /* AppDelegate.m */; };
 		2E2C892218A68FE4005EA55C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C892018A68FE4005EA55C /* Main.storyboard */; };
 		2E2C892518A68FE4005EA55C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C892418A68FE4005EA55C /* ViewController.m */; };
-		2E2C892818A68FE4005EA55C /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C892718A68FE4005EA55C /* MyScene.m */; };
 		2E2C892C18A68FE4005EA55C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C892B18A68FE4005EA55C /* Images.xcassets */; };
 		2E2C893318A68FE4005EA55C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C893218A68FE4005EA55C /* XCTest.framework */; };
 		2E2C893418A68FE4005EA55C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C890C18A68FE4005EA55C /* Foundation.framework */; };
 		2E2C893518A68FE4005EA55C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C891018A68FE4005EA55C /* UIKit.framework */; };
 		2E2C893D18A68FE4005EA55C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C893B18A68FE4005EA55C /* InfoPlist.strings */; };
 		2E2C893F18A68FE4005EA55C /* Anchor_HandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C893E18A68FE4005EA55C /* Anchor_HandlerTests.m */; };
+		2E2C895718A69456005EA55C /* Barge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C894818A69456005EA55C /* Barge.m */; };
+		2E2C895818A69456005EA55C /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C894918A69456005EA55C /* MyScene.m */; };
+		2E2C895918A69456005EA55C /* AnchorWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C894A18A69456005EA55C /* AnchorWire.m */; };
+		2E2C895B18A69456005EA55C /* Winch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C894C18A69456005EA55C /* Winch.m */; };
+		2E2C895D18A69456005EA55C /* Anchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C894E18A69456005EA55C /* Anchor.m */; };
+		2E2C895E18A69456005EA55C /* WindArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C895118A69456005EA55C /* WindArrow.m */; };
+		2E2C896118A6949C005EA55C /* AnchorAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C895F18A6949C005EA55C /* AnchorAssembly.m */; };
+		2E2C896418A695EB005EA55C /* AnchorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C896318A695EB005EA55C /* AnchorHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +58,27 @@
 		2E2C892318A68FE4005EA55C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2E2C892418A68FE4005EA55C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2E2C892618A68FE4005EA55C /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		2E2C892718A68FE4005EA55C /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		2E2C892B18A68FE4005EA55C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E2C893118A68FE4005EA55C /* Anchor HandlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anchor HandlerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C893218A68FE4005EA55C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2E2C893A18A68FE4005EA55C /* Anchor HandlerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Anchor HandlerTests-Info.plist"; sourceTree = "<group>"; };
 		2E2C893C18A68FE4005EA55C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E2C893E18A68FE4005EA55C /* Anchor_HandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anchor_HandlerTests.m; sourceTree = "<group>"; };
+		2E2C894818A69456005EA55C /* Barge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Barge.m; path = ../../../../../../Volumes/Public/Developer/Spring/Spring/Barge.m; sourceTree = "<group>"; };
+		2E2C894918A69456005EA55C /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyScene.m; path = ../../../../../../Volumes/Public/Developer/Spring/Spring/MyScene.m; sourceTree = "<group>"; };
+		2E2C894A18A69456005EA55C /* AnchorWire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnchorWire.m; path = /Volumes/Public/Developer/Spring/Spring/AnchorWire.m; sourceTree = "<absolute>"; };
+		2E2C894C18A69456005EA55C /* Winch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Winch.m; path = /Volumes/Public/Developer/Spring/Spring/Winch.m; sourceTree = "<absolute>"; };
+		2E2C894E18A69456005EA55C /* Anchor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Anchor.m; path = /Volumes/Public/Developer/Spring/Spring/Anchor.m; sourceTree = "<absolute>"; };
+		2E2C894F18A69456005EA55C /* AnchorWire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnchorWire.h; path = /Volumes/Public/Developer/Spring/Spring/AnchorWire.h; sourceTree = "<absolute>"; };
+		2E2C895118A69456005EA55C /* WindArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WindArrow.m; path = ../../../../../../Volumes/Public/Developer/Spring/Spring/WindArrow.m; sourceTree = "<group>"; };
+		2E2C895218A69456005EA55C /* Barge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Barge.h; path = ../../../../../../Volumes/Public/Developer/Spring/Spring/Barge.h; sourceTree = "<group>"; };
+		2E2C895318A69456005EA55C /* Winch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Winch.h; path = /Volumes/Public/Developer/Spring/Spring/Winch.h; sourceTree = "<absolute>"; };
+		2E2C895418A69456005EA55C /* Anchor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Anchor.h; path = /Volumes/Public/Developer/Spring/Spring/Anchor.h; sourceTree = "<absolute>"; };
+		2E2C895518A69456005EA55C /* WindArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WindArrow.h; path = ../../../../../../Volumes/Public/Developer/Spring/Spring/WindArrow.h; sourceTree = "<group>"; };
+		2E2C895F18A6949C005EA55C /* AnchorAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnchorAssembly.m; path = /Volumes/Public/Developer/Spring/AnchorAssembly.m; sourceTree = "<absolute>"; };
+		2E2C896018A6949C005EA55C /* AnchorAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnchorAssembly.h; path = /Volumes/Public/Developer/Spring/AnchorAssembly.h; sourceTree = "<absolute>"; };
+		2E2C896218A695EB005EA55C /* AnchorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnchorHandler.h; sourceTree = "<group>"; };
+		2E2C896318A695EB005EA55C /* AnchorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnchorHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +140,20 @@
 		2E2C891418A68FE4005EA55C /* Anchor Handler */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C896518A6969E005EA55C /* AnchorAssembly */,
 				2E2C891D18A68FE4005EA55C /* AppDelegate.h */,
 				2E2C891E18A68FE4005EA55C /* AppDelegate.m */,
 				2E2C892018A68FE4005EA55C /* Main.storyboard */,
 				2E2C892318A68FE4005EA55C /* ViewController.h */,
 				2E2C892418A68FE4005EA55C /* ViewController.m */,
 				2E2C892618A68FE4005EA55C /* MyScene.h */,
-				2E2C892718A68FE4005EA55C /* MyScene.m */,
+				2E2C894818A69456005EA55C /* Barge.m */,
+				2E2C894918A69456005EA55C /* MyScene.m */,
+				2E2C896218A695EB005EA55C /* AnchorHandler.h */,
+				2E2C896318A695EB005EA55C /* AnchorHandler.m */,
+				2E2C895118A69456005EA55C /* WindArrow.m */,
+				2E2C895218A69456005EA55C /* Barge.h */,
+				2E2C895518A69456005EA55C /* WindArrow.h */,
 				2E2C892B18A68FE4005EA55C /* Images.xcassets */,
 				2E2C891518A68FE4005EA55C /* Supporting Files */,
 			);
@@ -159,6 +187,21 @@
 				2E2C893B18A68FE4005EA55C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E2C896518A6969E005EA55C /* AnchorAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C896018A6949C005EA55C /* AnchorAssembly.h */,
+				2E2C895F18A6949C005EA55C /* AnchorAssembly.m */,
+				2E2C895318A69456005EA55C /* Winch.h */,
+				2E2C894C18A69456005EA55C /* Winch.m */,
+				2E2C894F18A69456005EA55C /* AnchorWire.h */,
+				2E2C894A18A69456005EA55C /* AnchorWire.m */,
+				2E2C895418A69456005EA55C /* Anchor.h */,
+				2E2C894E18A69456005EA55C /* Anchor.m */,
+			);
+			name = AnchorAssembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,10 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2C892818A68FE4005EA55C /* MyScene.m in Sources */,
+				2E2C895D18A69456005EA55C /* Anchor.m in Sources */,
+				2E2C895818A69456005EA55C /* MyScene.m in Sources */,
+				2E2C895E18A69456005EA55C /* WindArrow.m in Sources */,
 				2E2C892518A68FE4005EA55C /* ViewController.m in Sources */,
+				2E2C895B18A69456005EA55C /* Winch.m in Sources */,
 				2E2C891F18A68FE4005EA55C /* AppDelegate.m in Sources */,
+				2E2C896418A695EB005EA55C /* AnchorHandler.m in Sources */,
+				2E2C895918A69456005EA55C /* AnchorWire.m in Sources */,
 				2E2C891B18A68FE4005EA55C /* main.m in Sources */,
+				2E2C896118A6949C005EA55C /* AnchorAssembly.m in Sources */,
+				2E2C895718A69456005EA55C /* Barge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
