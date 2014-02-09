@@ -7,7 +7,6 @@
 //
 
 #import "MyScene.h"
-#import "Spring.h"
 #import "WindArrow.h"
 #import "Barge.h"
 #import "AnchorHandler.h"
