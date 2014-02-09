@@ -22,7 +22,6 @@
 		2E2C893518A68FE4005EA55C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C891018A68FE4005EA55C /* UIKit.framework */; };
 		2E2C893D18A68FE4005EA55C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C893B18A68FE4005EA55C /* InfoPlist.strings */; };
 		2E2C893F18A68FE4005EA55C /* Anchor_HandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C893E18A68FE4005EA55C /* Anchor_HandlerTests.m */; };
-		2E2C895818A69456005EA55C /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C894918A69456005EA55C /* MyScene.m */; };
 		2E2C895E18A69456005EA55C /* WindArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C895118A69456005EA55C /* WindArrow.m */; };
 		2E2C896418A695EB005EA55C /* AnchorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C896318A695EB005EA55C /* AnchorHandler.m */; };
 		2ED56B5618A79DA20057F5B5 /* Anchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B5518A79DA20057F5B5 /* Anchor.m */; };
@@ -30,6 +29,7 @@
 		2ED56B5C18A79F2C0057F5B5 /* AnchorAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B5B18A79F2C0057F5B5 /* AnchorAssembly.m */; };
 		2ED56B5F18A79FAB0057F5B5 /* Winch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B5E18A79FAB0057F5B5 /* Winch.m */; };
 		2ED56B6218A7A0330057F5B5 /* AnchorWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B6118A7A0330057F5B5 /* AnchorWire.m */; };
+		2ED56B6418A7A0C40057F5B5 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B6318A7A0C40057F5B5 /* MyScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +57,12 @@
 		2E2C892118A68FE4005EA55C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E2C892318A68FE4005EA55C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2E2C892418A68FE4005EA55C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2E2C892618A68FE4005EA55C /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		2E2C892B18A68FE4005EA55C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E2C893118A68FE4005EA55C /* Anchor HandlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anchor HandlerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C893218A68FE4005EA55C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2E2C893A18A68FE4005EA55C /* Anchor HandlerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Anchor HandlerTests-Info.plist"; sourceTree = "<group>"; };
 		2E2C893C18A68FE4005EA55C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E2C893E18A68FE4005EA55C /* Anchor_HandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anchor_HandlerTests.m; sourceTree = "<group>"; };
-		2E2C894918A69456005EA55C /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyScene.m; path = ../../../../../../Volumes/Public/Developer/Spring/Spring/MyScene.m; sourceTree = "<group>"; };
 		2E2C895118A69456005EA55C /* WindArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WindArrow.m; path = ../../../../../../Volumes/Public/Developer/Spring/Spring/WindArrow.m; sourceTree = "<group>"; };
 		2E2C895518A69456005EA55C /* WindArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WindArrow.h; path = ../../../../../../Volumes/Public/Developer/Spring/Spring/WindArrow.h; sourceTree = "<group>"; };
 		2E2C896218A695EB005EA55C /* AnchorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnchorHandler.h; sourceTree = "<group>"; };
@@ -79,6 +77,8 @@
 		2ED56B5E18A79FAB0057F5B5 /* Winch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Winch.m; sourceTree = "<group>"; };
 		2ED56B6018A7A0330057F5B5 /* AnchorWire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnchorWire.h; sourceTree = "<group>"; };
 		2ED56B6118A7A0330057F5B5 /* AnchorWire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnchorWire.m; sourceTree = "<group>"; };
+		2ED56B6318A7A0C40057F5B5 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		2ED56B6518A7A1160057F5B5 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +140,11 @@
 		2E2C891418A68FE4005EA55C /* Anchor Handler */ = {
 			isa = PBXGroup;
 			children = (
+				2ED56B6518A7A1160057F5B5 /* MyScene.h */,
+				2ED56B6318A7A0C40057F5B5 /* MyScene.m */,
 				2E2C896618A69766005EA55C /* Vessels */,
 				2E2C896518A6969E005EA55C /* AnchorAssembly */,
 				2E2C896718A697A0005EA55C /* AppFiles */,
-				2E2C892618A68FE4005EA55C /* MyScene.h */,
-				2E2C894918A69456005EA55C /* MyScene.m */,
 				2E2C895118A69456005EA55C /* WindArrow.m */,
 				2E2C895518A69456005EA55C /* WindArrow.h */,
 				2E2C892B18A68FE4005EA55C /* Images.xcassets */,
@@ -318,8 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ED56B5918A79EDB0057F5B5 /* Barge.m in Sources */,
+				2ED56B6418A7A0C40057F5B5 /* MyScene.m in Sources */,
 				2ED56B5618A79DA20057F5B5 /* Anchor.m in Sources */,
-				2E2C895818A69456005EA55C /* MyScene.m in Sources */,
 				2E2C895E18A69456005EA55C /* WindArrow.m in Sources */,
 				2ED56B6218A7A0330057F5B5 /* AnchorWire.m in Sources */,
 				2ED56B5C18A79F2C0057F5B5 /* AnchorAssembly.m in Sources */,
