@@ -49,7 +49,12 @@
     [self addChild:_anchorHandler];
 
 }
-
+/**
+ * Adds the arrow showing the wind direction
+ * @param None
+ * @param None
+ * @return Void
+ */
 -(void) addWindArrow
 {
     _windArrow = [WindArrow spriteNodeWithImageNamed:@"Dark_Green_Arrow_Up"];
@@ -59,6 +64,7 @@
     
     [self addChild:_windArrow];
 }
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */

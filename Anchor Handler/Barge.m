@@ -9,6 +9,8 @@
 #import "Barge.h"
 #import "AnchorAssembly.h"
 
+
+
 @implementation Barge
 
 -(id)init
@@ -23,6 +25,11 @@
 }
 
 
+/**
+ * Creates spritenode for the hull of the vessel
+ * @see SKSpriteNode
+ * @warning The position of the hull in the scene is hardwired. We need a new method to initiate with arbitrary position. Be careful with initiation of physics body.
+ */
 
 -(void) setUpHull
 {
@@ -42,6 +49,14 @@
 
 }
 
+
+/**
+ * Sets up 4 anchor pattern based on vessel position
+ * @param None
+ * @return Void
+ * @see setUpHull
+ * @warning Currently hard coded. No allowance for changes in vessel size currently
+ */
 
 -(void) setUpAnchorPattern
 {
@@ -121,6 +136,8 @@
 //        }
 //    }];
 }
+
+
 
 -(void)update:(CFTimeInterval)currentTime
 {
