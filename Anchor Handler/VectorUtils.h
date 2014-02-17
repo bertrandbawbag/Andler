@@ -54,6 +54,18 @@ SKT_INLINE CGVector CGVectorNormalise (CGVector vector) {
 SKT_INLINE float CGVectorAngle (CGVector vector)    {
     return atan2f (vector.dx, vector.dy);
 }
+/**
+ * Takes an angle and returns a normalised vector
+ * @param angle float
+ * @return CGVector
+ */
+
+SKT_INLINE CGVector CGVectorAngleToVector (float angle)  {
+    float opposite = sin(angle);
+    float adjacent = cos(angle);
+    return CGVectorMake (adjacent, opposite);
+    
+}
 
 // Returns shortest angle between two angles, between -M_PI and M_PI
 SKT_INLINE CGFloat ScalarShortestAngleBetween(CGVector vector1, CGVector vector2) {

@@ -87,6 +87,9 @@
 
 -(void) rotateToDirection: (CGVector) direction
 {
+    
+    
+    
     float targetAngle = atan2f(direction.dy, direction.dx);
     NSLog(@"%f", targetAngle);
     float angleToRotate = (self.zRotation - targetAngle);
