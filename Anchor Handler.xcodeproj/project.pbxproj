@@ -30,6 +30,8 @@
 		2ED56B6218A7A0330057F5B5 /* AnchorWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B6118A7A0330057F5B5 /* AnchorWire.m */; };
 		2ED56B6418A7A0C40057F5B5 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B6318A7A0C40057F5B5 /* MyScene.m */; };
 		2ED56B6818A7A4830057F5B5 /* WindArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B6718A7A4830057F5B5 /* WindArrow.m */; };
+		7E3908DF18AAC7810020B124 /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E3908DE18AAC7810020B124 /* SKTUtils.mm */; };
+		7E4D905018B0AD0D00C46E18 /* VectorUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D904F18B0AD0D00C46E18 /* VectorUtils.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		2ED56B6518A7A1160057F5B5 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		2ED56B6618A7A4830057F5B5 /* WindArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindArrow.h; sourceTree = "<group>"; };
 		2ED56B6718A7A4830057F5B5 /* WindArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindArrow.m; sourceTree = "<group>"; };
+		7E3908DD18AAC7810020B124 /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		7E3908DE18AAC7810020B124 /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
+		7E4D904E18B0AAFB00C46E18 /* VectorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils.h; sourceTree = "<group>"; };
+		7E4D904F18B0AD0D00C46E18 /* VectorUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VectorUtils.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,10 @@
 		2E2C891418A68FE4005EA55C /* Anchor Handler */ = {
 			isa = PBXGroup;
 			children = (
+				7E3908DD18AAC7810020B124 /* SKTUtils.h */,
+				7E4D904E18B0AAFB00C46E18 /* VectorUtils.h */,
+				7E4D904F18B0AD0D00C46E18 /* VectorUtils.mm */,
+				7E3908DE18AAC7810020B124 /* SKTUtils.mm */,
 				2ED56B6518A7A1160057F5B5 /* MyScene.h */,
 				2ED56B6318A7A0C40057F5B5 /* MyScene.m */,
 				2ED56B6618A7A4830057F5B5 /* WindArrow.h */,
@@ -320,6 +330,7 @@
 				2ED56B6818A7A4830057F5B5 /* WindArrow.m in Sources */,
 				2ED56B5918A79EDB0057F5B5 /* Barge.m in Sources */,
 				2ED56B6418A7A0C40057F5B5 /* MyScene.m in Sources */,
+				7E4D905018B0AD0D00C46E18 /* VectorUtils.mm in Sources */,
 				2ED56B5618A79DA20057F5B5 /* Anchor.m in Sources */,
 				2ED56B6218A7A0330057F5B5 /* AnchorWire.m in Sources */,
 				2ED56B5C18A79F2C0057F5B5 /* AnchorAssembly.m in Sources */,
@@ -327,6 +338,7 @@
 				2E2C891F18A68FE4005EA55C /* AppDelegate.m in Sources */,
 				2E2C896418A695EB005EA55C /* AnchorHandler.m in Sources */,
 				2E2C891B18A68FE4005EA55C /* main.m in Sources */,
+				7E3908DF18AAC7810020B124 /* SKTUtils.mm in Sources */,
 				2ED56B5F18A79FAB0057F5B5 /* Winch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

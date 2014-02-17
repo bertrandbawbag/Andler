@@ -18,6 +18,8 @@
         self.yScale = 0.4;
         self.dpMode = @"holdStation";
         self.dpHoldingPosition = self.position;
+
+        self.maxThrustForce = 100;
         [self setUpPhysics];
 
     }
@@ -51,16 +53,55 @@
 {
     
 }
+
+/**
+ * DP function to keep the vessel on station. Applies force to bring the vessel back to the desired point
+ * @param None
+ * @return void
+ * @warning Uses max force to limit the total force applied to bring the vessel back
+ */
 -(void) holdStationAtPoint
 {
     // applies force in the opposite direction that the vessel is drifting away from dpHoldingPosition
     CGVector offset = CGVectorMake(self.dpHoldingPosition.x - self.position.x, self.dpHoldingPosition.y - self.position.y);
+    if (fabsf(offset.dx)  > self.maxThrustForce ) {
+        if (offset.dx < 0) {
+            offset.dx = -self.maxThrustForce;
+        }   else    {
+            offset.dx = self.maxThrustForce;
+
+        }
+    }
+    if (fabsf(offset.dy)  > self.maxThrustForce ) {
+        if (offset.dy < 0) {
+            offset.dy = -self.maxThrustForce;
+        }   else    {
+            offset.dy = self.maxThrustForce;
+            
+        }
+    }
+    
     [self.physicsBody applyForce:offset];
+    [self rotateToDirection:CGVectorMake(-0.1, -0.1)];
+}
+
+-(void) rotateToDirection: (CGVector) direction
+{
+    float targetAngle = atan2f(direction.dy, direction.dx);
+    NSLog(@"%f", targetAngle);
+    float angleToRotate = (self.zRotation - targetAngle);
+    NSLog(@"%f", angleToRotate);
+    float torqueToApply = angleToRotate;
+    [self.physicsBody applyTorque:torqueToApply];
+    
 }
 
 -(void) setUpPhysics
 {
     self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
+    self.physicsBody.linearDamping = 0.5;
+    self.physicsBody.angularDamping = 0.9;
+    self.physicsBody.mass = 100;
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

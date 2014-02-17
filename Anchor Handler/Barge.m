@@ -51,7 +51,7 @@
 
 
 /**
- * Sets up 4 anchor pattern based on vessel position
+ * Sets up 4 anchor pattern based on vessel position. Should be called following init of class
  * @param None
  * @return Void
  * @see setUpHull

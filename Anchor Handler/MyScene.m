@@ -29,7 +29,7 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.physicsWorld.gravity = CGVectorMake(0.1, 0.1);
+        self.physicsWorld.gravity = CGVectorMake(0.0, -0.1);
         self.backgroundColor = [SKColor whiteColor];
  
     }
