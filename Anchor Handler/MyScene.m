@@ -74,6 +74,9 @@
         CGPoint location = [touch locationInNode:self];
         SKNode *node = [self nodeAtPoint:location];
         
+        NSNotification *notification = [[NSNotification alloc] initWithName:@"tapInScene" object:node userInfo:Nil];
+        [[NSNotificationCenter defaultCenter] postNotification:notification];
+        
         if ([node isKindOfClass:[Anchor class]]) {
             Anchor *anchor = (Anchor *)node;
             anchor.physicsBody.dynamic = !(anchor.physicsBody.dynamic);

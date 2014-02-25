@@ -21,6 +21,7 @@
 
         self.maxThrustForce = 100;
         [self setUpPhysics];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationOfTouchReceived:) name:@"tapInScene" object:nil];
 
     }
     return self;
@@ -91,9 +92,9 @@
     
     
     float targetAngle = atan2f(direction.dy, direction.dx);
-    NSLog(@"%f", targetAngle);
+    // NSLog(@"%f", targetAngle);
     float angleToRotate = (self.zRotation - targetAngle);
-    NSLog(@"%f", angleToRotate);
+    // NSLog(@"%f", angleToRotate);
     float torqueToApply = angleToRotate;
     [self.physicsBody applyTorque:torqueToApply];
     
@@ -109,6 +110,12 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    
+}
+
+-(void) notificationOfTouchReceived: (NSNotification *) notification
+{
+    NSLog(@"tapInScene notification received in node type %@", [notification.object class]);
     
 }
 

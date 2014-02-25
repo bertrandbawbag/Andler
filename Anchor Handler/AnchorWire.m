@@ -36,6 +36,7 @@
         self.anchorEndNode = anchor;
         self.strokeColor = [SKColor blackColor];
         [self redrawWirePath];
+        self.userInteractionEnabled = NO;
         
         // testing only
         self.relaxedLength = 200.0f;

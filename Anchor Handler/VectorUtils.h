@@ -66,8 +66,11 @@ SKT_INLINE CGVector CGVectorAngleToVector (float angle)  {
     return CGVectorMake (adjacent, opposite);
     
 }
-
-// Returns shortest angle between two angles, between -M_PI and M_PI
+/**
+ * Returns shortest angle between two angles, between -M_PI and M_PI
+ * @param CGVector CGVector
+ * @return CGFloat
+ */
 SKT_INLINE CGFloat ScalarShortestAngleBetween(CGVector vector1, CGVector vector2) {
     
     float vector1Angle = CGVectorAngle(vector1);
