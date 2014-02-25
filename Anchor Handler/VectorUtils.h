@@ -71,7 +71,7 @@ SKT_INLINE CGVector CGVectorAngleToVector (float angle)  {
  * @param CGVector CGVector
  * @return CGFloat
  */
-SKT_INLINE CGFloat ScalarShortestAngleBetween(CGVector vector1, CGVector vector2) {
+SKT_INLINE CGFloat CGVectorScalarShortestAngleBetween(CGVector vector1, CGVector vector2) {
     
     float vector1Angle = CGVectorAngle(vector1);
     float vector2Angle = CGVectorAngle(vector2);
@@ -85,5 +85,19 @@ SKT_INLINE CGFloat ScalarShortestAngleBetween(CGVector vector1, CGVector vector2
         angle += M_PI * 2;
     }
     return angle;
+}
+/**
+ * Returns NSString listing (x,y) from a CGVector
+ * @param CGVector CGVector
+ * @return NSString
+ */
+SKT_INLINE NSString  *NSStringFromCGVector (CGVector vector)  {
+    
+    NSString *string = [NSString stringWithFormat:@"%f,%f", vector.dx, vector.dy];
+
+    
+    return string;
+    
+    
 }
 

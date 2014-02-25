@@ -19,7 +19,7 @@
         self.dpMode = @"holdStation";
         self.dpHoldingPosition = self.position;
 
-        self.maxThrustForce = 100;
+        self.maxThrustForce = 50;
         [self setUpPhysics];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationOfTouchReceived:) name:@"tapInScene" object:nil];
 
@@ -82,19 +82,15 @@
         }
     }
     
-    [self.physicsBody applyForce:offset];
-    [self rotateToDirection:CGVectorMake(-0.1, -0.1)];
+    NSLog(@"%@", NSStringFromCGVector(offset));
+    
+    [self.physicsBody applyImpulse:offset];
+    [self rotateToDirection:CGVectorMake(0, -0.1)];
 }
 
 -(void) rotateToDirection: (CGVector) direction
 {
-    
-    
-    
-    float targetAngle = atan2f(direction.dy, direction.dx);
-    // NSLog(@"%f", targetAngle);
-    float angleToRotate = (self.zRotation - targetAngle);
-    // NSLog(@"%f", angleToRotate);
+    float angleToRotate = CGVectorScalarShortestAngleBetween(CGVectorAngleToVector(self.zRotation) , direction);
     float torqueToApply = angleToRotate;
     [self.physicsBody applyTorque:torqueToApply];
     
@@ -103,7 +99,7 @@
 -(void) setUpPhysics
 {
     self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
-    self.physicsBody.linearDamping = 0.5;
+    self.physicsBody.linearDamping = 0.9;
     self.physicsBody.angularDamping = 0.9;
     self.physicsBody.mass = 100;
 }

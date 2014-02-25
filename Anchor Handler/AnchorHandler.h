@@ -17,6 +17,7 @@
 
 -(id)initWithImageNamed:(NSString *)name position: (CGPoint) position;
 -(id)initWithColor:(UIColor *)color size:(CGSize)size position:(CGPoint) position;
+
 -(void)update:(CFTimeInterval)currentTime;
 -(void)didSimulatePhysics;
 -(void)didEvaluateActions;
