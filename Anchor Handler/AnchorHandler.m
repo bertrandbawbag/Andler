@@ -78,11 +78,8 @@
             offset.dy = -self.maxThrustForce;
         }   else    {
             offset.dy = self.maxThrustForce;
-            
         }
     }
-    
-    NSLog(@"%@", NSStringFromCGVector(offset));
     
     [self.physicsBody applyImpulse:offset];
     [self rotateToDirection:CGVectorMake(0, -0.1)];
