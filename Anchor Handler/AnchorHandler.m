@@ -9,6 +9,9 @@
 #import "AnchorHandler.h"
 
 @implementation AnchorHandler
+{
+    CGMutablePathRef _pathToFollow;
+}
 
 -(id)initWithImageNamed:(NSString *)name position: (CGPoint) position;
 {
@@ -40,6 +43,10 @@
     if ([self.dpMode isEqualToString:@"holdStation"]) {
         [self holdStationAtPoint];
     }
+    
+    if ([self.dpMode isEqualToString:@"transitToPoint"]) {
+        [self transitToPoint:CGPointMake(500, 700)];
+    }
 }
 -(void)didSimulatePhysics
 {
@@ -49,10 +56,23 @@
 {
     
 }
-
+/**
+ * Transit from one point to another. Vessel turns to face travel. Calculates complex route using Lee algorithm.
+ * @param CGPoint point
+ * @return void
+ * @warning Uses max force to limit the total force applied to bring the vessel back
+ */
 -(void) transitToPoint: (CGPoint) point
 {
+// calculate route and draw invisible path to follow
     
+    _pathToFollow = CGPathCreateMutable();
+    CGPathMoveToPoint(_pathToFollow, nil,  self.position.x, self.position.y);
+    CGPathAddLineToPoint(_pathToFollow, nil, point.x, point.y);
+    
+// rotate to path direction
+// follow path
+// hold position at end point
 }
 
 /**
