@@ -7,6 +7,7 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "Anchor.h"
 
 
 @interface AnchorHandler : SKSpriteNode
@@ -24,6 +25,8 @@
 
 -(void) transitToPoint: (CGPoint) point;
 -(void) holdStationAtPoint;
+
+-(BOOL) recoverAnchor: (Anchor *) anchor;
 
 
 @end

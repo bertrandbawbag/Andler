@@ -105,6 +105,26 @@
     [self rotateToDirection:CGVectorMake(0, -0.1)];
 }
 
+/**
+ * Get vessel in position and get the anchor off the seabed
+ * @param Anchor anchor
+ * @return BOOL
+ * @see transitToPoint
+ */
+
+-(BOOL) recoverAnchor:(Anchor *)anchor
+{
+    BOOL anchorOnDeck = false;
+    
+    // calculate pickup point
+    // go to pickup point
+    // rotate vessel
+    // connect to anchor
+    // increase force to hold
+    
+    return anchorOnDeck;
+}
+
 -(void) rotateToDirection: (CGVector) direction
 {
     float angleToRotate = CGVectorScalarShortestAngleBetween(CGVectorAngleToVector(self.zRotation) , direction);
