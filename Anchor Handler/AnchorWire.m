@@ -67,18 +67,25 @@
 
 -(void) didSimulatePhysics
 {
-
     [self redrawWirePath];
-    
 }
 
 #pragma mark Calculations
-
+/**
+ * Redraws anchor wire between anchor winch and anchor
+ * @param None
+ * @return void
+ * @warning See note regarding position of SKShapeNode and touch receipt area
+ */
 -(void) redrawWirePath
 {
     CGMutablePathRef path = CGPathCreateMutable();
-    CGPathMoveToPoint(path, Nil, self.winchEndNode.position.x, self.winchEndNode.position.y);
-    CGPathAddLineToPoint(path, Nil, self.anchorEndNode.position.x, self.anchorEndNode.position.y);
+    
+    // needs to move position to end of anchor to allow touches to be restricted
+    self.position = self.winchEndNode.position;
+    CGPathMoveToPoint(path, Nil, self.position.x - self.winchEndNode.position.x, self.position.y - self.winchEndNode.position.y);
+    CGPathAddLineToPoint(path, Nil,  self.anchorEndNode.position.x - self.position.x, self.anchorEndNode.position.y - self.position.y);
+    
     self.path = path;
     
 }

@@ -115,7 +115,9 @@
             
             [self addChild:assembly];
             
-            NSLog(@"%@, %@, %@", assembly.name, NSStringFromCGPoint(assembly.winch.position), assembly.winch.physicsBody.description);
+            NSLog(@"%@, %@, %@", assembly.name, NSStringFromCGPoint(assembly.winch.position), NSStringFromCGPoint(assembly.wire.position));
+    
+            
             
             CGPoint jointAnchor = CGPointMake(winchX, winchY);
             SKPhysicsJointPin *joint = [SKPhysicsJointPin jointWithBodyA:assembly.winch.physicsBody  bodyB:self.hull.physicsBody anchor:jointAnchor];
