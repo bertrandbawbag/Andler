@@ -47,6 +47,13 @@
     if ([self.dpMode isEqualToString:@"transitToPoint"]) {
         [self transitToPoint:CGPointMake(500, 700)];
     }
+    
+    if ([self.operatingMode isEqualToString:@"recoverAnchor"]) {
+        [self recoverAnchor:self.targetAnchor];
+    }
+    
+
+    
 }
 -(void)didSimulatePhysics
 {
@@ -114,6 +121,7 @@
 
 -(BOOL) recoverAnchor:(Anchor *)anchor
 {
+    NSLog(@"%s %d %s %s", __FILE__, __LINE__, __PRETTY_FUNCTION__, __FUNCTION__);
     BOOL anchorOnDeck = false;
     
     // calculate pickup point
@@ -132,6 +140,8 @@
     [self.physicsBody applyTorque:torqueToApply];
     
 }
+
+
 
 -(void) setUpPhysics
 {

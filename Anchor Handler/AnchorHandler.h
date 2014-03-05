@@ -12,7 +12,9 @@
 
 @interface AnchorHandler : SKSpriteNode
 
-@property (nonatomic) NSString *dpMode;
+@property (nonatomic) NSString *dpMode;             // holdstation, move to point, transittopoint
+@property (nonatomic) NSString *operatingMode;      // recover anchor, move anchor, standby
+@property (nonatomic) Anchor *targetAnchor;         // used with operating mode
 @property CGPoint dpHoldingPosition;
 @property float maxThrustForce;
 
