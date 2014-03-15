@@ -101,7 +101,7 @@
                 _anchorHandlerSelected = NO;
                 _anchorHandler.colorBlendFactor = 0.3;
                 _anchorHandler.dpHoldingPosition = location;
-                _anchorHandler.dpMode = @"holdStation";
+                [_anchorHandler holdStationAtPoint];
             }
         }
     }

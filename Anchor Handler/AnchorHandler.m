@@ -19,7 +19,8 @@
         self.position = position;
         self.xScale = 0.4;
         self.yScale = 0.4;
-        self.dpMode = @"holdStation";
+        self.operatingMode = kHoldStationOperationMode;
+        self.activityMode = kStandbyActivityMode;
         self.dpHoldingPosition = self.position;
 
         self.maxThrustForce = 50;
@@ -40,15 +41,15 @@
 }
 -(void)update:(CFTimeInterval)currentTime
 {
-    if ([self.dpMode isEqualToString:@"holdStation"]) {
+    if (self.operatingMode == kHoldStationOperationMode) {
         [self holdStationAtPoint];
     }
     
-    if ([self.dpMode isEqualToString:@"transitToPoint"]) {
+    if (self.operatingMode == kTransitOperationMode) {
         [self transitToPoint:CGPointMake(500, 700)];
     }
     
-    if ([self.operatingMode isEqualToString:@"recoverAnchor"]) {
+    if (self.activityMode == kRecoverAnchorActivityMode) {
         [self recoverAnchor:self.targetAnchor];
     }
     
@@ -90,6 +91,7 @@
  */
 -(void) holdStationAtPoint
 {
+    self.operatingMode = kHoldStationOperationMode;
     // applies force in the opposite direction that the vessel is drifting away from dpHoldingPosition
     CGVector offset = CGVectorMake(self.dpHoldingPosition.x - self.position.x, self.dpHoldingPosition.y - self.position.y);
     if (fabsf(offset.dx)  > self.maxThrustForce ) {

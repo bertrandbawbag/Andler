@@ -9,11 +9,24 @@
 #import <SpriteKit/SpriteKit.h>
 #import "Anchor.h"
 
+typedef enum OperatingModeTypes {
+    kHoldStationOperationMode,
+    kTransitOperationMode,
+} OperatingMode;
+
+typedef enum ActivityModeType   {
+    kStandbyActivityMode,
+    kRecoverAnchorActivityMode,
+    kDeployAnchorMode,
+    kAnchorDeckedMode
+} ActivityMode;
 
 @interface AnchorHandler : SKSpriteNode
 
-@property (nonatomic) NSString *dpMode;             // holdstation, move to point, transittopoint
-@property (nonatomic) NSString *operatingMode;      // recover anchor, move anchor, standby
+
+
+@property (nonatomic) OperatingMode operatingMode;             // holdstation, move to point, transittopoint
+@property (nonatomic) ActivityMode activityMode;      // recover anchor, move anchor, standby
 @property (nonatomic) Anchor *targetAnchor;         // used with operating mode
 @property CGPoint dpHoldingPosition;
 @property float maxThrustForce;
