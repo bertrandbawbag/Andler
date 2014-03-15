@@ -10,6 +10,7 @@
 #import "WindArrow.h"
 #import "Barge.h"
 #import "AnchorHandler.h"
+#import "Weather.h"
 
 
 
@@ -19,6 +20,7 @@
     WindArrow *_windArrow;
     Barge* _barge;
     AnchorHandler *_anchorHandler;
+    Weather *_weather;
     
     BOOL _anchorHandlerSelected;
     

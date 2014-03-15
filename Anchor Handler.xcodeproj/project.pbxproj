@@ -32,6 +32,7 @@
 		2ED56B6818A7A4830057F5B5 /* WindArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED56B6718A7A4830057F5B5 /* WindArrow.m */; };
 		7E3908DF18AAC7810020B124 /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E3908DE18AAC7810020B124 /* SKTUtils.mm */; };
 		7E4D905018B0AD0D00C46E18 /* VectorUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D904F18B0AD0D00C46E18 /* VectorUtils.mm */; };
+		7EB402A618D4C3E500C6C544 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB402A518D4C3E500C6C544 /* Weather.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		7E3908DE18AAC7810020B124 /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
 		7E4D904E18B0AAFB00C46E18 /* VectorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils.h; sourceTree = "<group>"; };
 		7E4D904F18B0AD0D00C46E18 /* VectorUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VectorUtils.mm; sourceTree = "<group>"; };
+		7EB402A418D4C3E500C6C544 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		7EB402A518D4C3E500C6C544 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				7E4D904F18B0AD0D00C46E18 /* VectorUtils.mm */,
 				2ED56B6518A7A1160057F5B5 /* MyScene.h */,
 				2ED56B6318A7A0C40057F5B5 /* MyScene.m */,
+				7EB402A418D4C3E500C6C544 /* Weather.h */,
+				7EB402A518D4C3E500C6C544 /* Weather.m */,
 				2ED56B6618A7A4830057F5B5 /* WindArrow.h */,
 				2ED56B6718A7A4830057F5B5 /* WindArrow.m */,
 				2E2C896618A69766005EA55C /* Vessels */,
@@ -329,6 +334,7 @@
 			files = (
 				2ED56B6818A7A4830057F5B5 /* WindArrow.m in Sources */,
 				2ED56B5918A79EDB0057F5B5 /* Barge.m in Sources */,
+				7EB402A618D4C3E500C6C544 /* Weather.m in Sources */,
 				2ED56B6418A7A0C40057F5B5 /* MyScene.m in Sources */,
 				7E4D905018B0AD0D00C46E18 /* VectorUtils.mm in Sources */,
 				2ED56B5618A79DA20057F5B5 /* Anchor.m in Sources */,
