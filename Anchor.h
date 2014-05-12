@@ -12,6 +12,7 @@
 
 @property CGVector force;
 
+- (id) initWithPosition: (CGPoint) position;
 - (void) didSimulatePhysics;
 - (void)didEvaluateActions;
 - (void)update:(CFTimeInterval)currentTime;

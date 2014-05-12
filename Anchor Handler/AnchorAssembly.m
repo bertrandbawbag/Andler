@@ -47,10 +47,13 @@ CGPoint _lastAnchorPosition;
 
 - (void) setUpAnchor
 {
-    self.anchor = [[Anchor alloc] initWithImageNamed:@"anchor"];
+    self.anchor = [[Anchor alloc] initWithPosition]:
+    
     self.anchor.zPosition = self.winch.zPosition;
     
-    _lastWinchPosition = self.anchor.position;
+
+    
+    _lastAnchorPosition = self.anchor.position;
     [self addChild:self.anchor];
 }
 
@@ -85,6 +88,7 @@ CGPoint _lastAnchorPosition;
 
     [self.wire didSimulatePhysics];
     [self.winch didSimulatePhysics];
+    [self.anchor didSimulatePhysics];
 }
 
 

@@ -81,10 +81,11 @@
         
         if ([node isKindOfClass:[Anchor class]]) {
             Anchor *anchor = (Anchor *)node;
-            anchor.physicsBody.dynamic = !(anchor.physicsBody.dynamic);
+            NSLog(@"%s", anchor.physicsBody.dynamic ? "true" : "false");
+            anchor.physicsBody.dynamic = !anchor.physicsBody.dynamic;
+            NSLog(@"%s", anchor.physicsBody.dynamic ? "true" : "false");
             anchor.color = [SKColor redColor];
             anchor.colorBlendFactor = 0.5;
-            
         }
         
         if ([node isKindOfClass:[AnchorHandler class]]) {
