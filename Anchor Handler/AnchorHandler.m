@@ -126,6 +126,8 @@
     NSLog(@"%s %d %s %s", __FILE__, __LINE__, __PRETTY_FUNCTION__, __FUNCTION__);
     BOOL anchorOnDeck = false;
     
+    self.targetAnchor = anchor;
+    
     // calculate pickup point
     // go to pickup point
     // rotate vessel

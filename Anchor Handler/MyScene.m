@@ -81,10 +81,11 @@
         
         if ([node isKindOfClass:[Anchor class]]) {
             Anchor *anchor = (Anchor *)node;
-            NSLog(@"%s", anchor.physicsBody.dynamic ? "true" : "false");
+            if (_anchorHandlerSelected) {
+                [_anchorHandler recoverAnchor:anchor];
+            }
+            
             anchor.physicsBody.dynamic = !anchor.physicsBody.dynamic;
-            NSLog(@"%s", anchor.physicsBody.dynamic ? "true" : "false");
-            anchor.color = [SKColor redColor];
             anchor.colorBlendFactor = 0.5;
         }
         
@@ -120,6 +121,7 @@
 -(void)didSimulatePhysics
 {
     [_barge didSimulatePhysics];
+    [_anchorHandler didSimulatePhysics];
 }
 
 -(void)didEvaluateActions
