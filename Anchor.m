@@ -40,9 +40,9 @@
 
 -(void) setUpPhysics
 {
-    self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
+    self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.size];
     self.physicsBody.dynamic = NO;
-    self.physicsBody.mass = 1.0;
+    self.physicsBody.mass = 20.0;
     self.physicsBody.affectedByGravity = NO;
 }
 
