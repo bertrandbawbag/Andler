@@ -20,7 +20,7 @@
 @property (nonatomic, strong) Anchor *anchor;
 
 
--(id)initWithWinchPosition: (CGPoint) position;
+-(id)initWithWinchPosition: (CGPoint) winchPosition andAnchorPosition: (CGPoint) anchorPosition;
 -(void)update:(CFTimeInterval)currentTime;
 -(void)didSimulatePhysics;
 -(void)didEvaluateActions;

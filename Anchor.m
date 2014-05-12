@@ -29,10 +29,9 @@
 
 -(id) initWithPosition:(CGPoint)position
 {
-    if (self = [super init]) {
+    if (self = [super initWithImageNamed:@"anchor"]) {
         
         self.position = position;
-        self.texture = [SKTexture textureWithImage:[UIImage imageNamed:@"anchor"]];
 
         [self setUpPhysics];
     }

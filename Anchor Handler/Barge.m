@@ -107,9 +107,8 @@
             }
             
             
-            AnchorAssembly *assembly = [[AnchorAssembly alloc] initWithWinchPosition:CGPointMake(winchX, winchY)];
+            AnchorAssembly *assembly = [[AnchorAssembly alloc] initWithWinchPosition:CGPointMake(winchX, winchY) andAnchorPosition:CGPointMake(anchorX, anchorY)];
             assembly.winch.color = winchColor;
-            assembly.anchor.position = CGPointMake(anchorX, anchorY);
             assembly.name = name;
             
             

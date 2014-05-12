@@ -21,12 +21,12 @@ CGPoint _lastAnchorPosition;
 
 
 #pragma mark - Initialisation and Set Up
--(id)initWithWinchPosition: (CGPoint) position  {
-    
+-(id)initWithWinchPosition: (CGPoint) winchPosition andAnchorPosition: (CGPoint) anchorPosition;
+{
     if (self = [super init]) {
         
-        [self setUpWinch:position];
-        [self setUpAnchor];
+        [self setUpWinch:winchPosition];
+        [self setUpAnchor:anchorPosition];
         [self setUpWire];
         
     }
@@ -45,9 +45,9 @@ CGPoint _lastAnchorPosition;
     [self addChild:self.winch];
 }
 
-- (void) setUpAnchor
+- (void) setUpAnchor: (CGPoint) position
 {
-    self.anchor = [[Anchor alloc] initWithPosition]:
+    self.anchor = [[Anchor alloc] initWithPosition:position];
     
     self.anchor.zPosition = self.winch.zPosition;
     
