@@ -6,6 +6,22 @@
 //  Copyright (c) 2014 Brian. All rights reserved.
 //
 
+/*
+What can my anchor handler do?
+1. hold station
+2. hold heading
+3. move holding heading
+4. transit to a point
+5. pick up an anchor from the seabed
+6. live anchor
+7. move anchor
+8. drop anchor
+9. take an anchor from the barge
+10. give an anchor to the barge
+11. install yokohama
+12. remove yokohama
+*/
+
 #import "AnchorHandler.h"
 
 @implementation AnchorHandler
