@@ -30,6 +30,7 @@ typedef enum ActivityModeType   {
 @property (nonatomic) Anchor *targetAnchor;         // used with operating mode
 @property CGPoint dpHoldingPosition;
 @property float maxThrustForce;
+@property float draft;
 
 -(id)initWithImageNamed:(NSString *)name position: (CGPoint) position;
 -(id)initWithColor:(UIColor *)color size:(CGSize)size position:(CGPoint) position;
