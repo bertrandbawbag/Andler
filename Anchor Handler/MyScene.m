@@ -13,9 +13,16 @@
 #import "Weather.h"
 
 
+@interface MyScene ()
+
+@property (nonatomic, strong) SKNode *gameLayer;
+@property (nonatomic, strong) SKNode *hudLayer;
+
+@end
 
 @implementation MyScene
 {
+    
 
     WindArrow *_windArrow;
     Barge* _barge;
@@ -33,7 +40,12 @@
         
         self.physicsWorld.gravity = CGVectorMake(0.0, -0.1);
         self.backgroundColor = [SKColor whiteColor];
- 
+        
+        self.gameLayer = [SKNode node];
+        self.hudLayer = [SKNode node];
+        
+        [self addChild:self.gameLayer];
+        [self addChild:self.hudLayer];
     }
 
     
@@ -44,11 +56,11 @@
 {
     [self addWindArrow];
     _barge = [[Barge alloc] init];
-    [self addChild:_barge];
+    [self.gameLayer addChild:_barge];
     [_barge setUpAnchorPattern];
     
     _anchorHandler = [[AnchorHandler alloc] initWithImageNamed:@"AnchorHandler" position:CGPointMake(500, 450)];
-    [self addChild:_anchorHandler];
+    [self.gameLayer addChild:_anchorHandler];
 
 }
 /**
@@ -64,7 +76,7 @@
     _windArrow.xScale = 0.1;
     _windArrow.yScale = 0.1;
     
-    [self addChild:_windArrow];
+    [self.hudLayer addChild:_windArrow];
 }
 
 
