@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E188D20192A7A1A00AE9CA0 /* ANHButtonMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E188D1F192A7A1A00AE9CA0 /* ANHButtonMenu.m */; };
+		2E188D23192A7B3200AE9CA0 /* SKBButtonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E188D22192A7B3200AE9CA0 /* SKBButtonNode.m */; };
 		2E2C890D18A68FE4005EA55C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C890C18A68FE4005EA55C /* Foundation.framework */; };
 		2E2C890F18A68FE4005EA55C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C890E18A68FE4005EA55C /* CoreGraphics.framework */; };
 		2E2C891118A68FE4005EA55C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C891018A68FE4005EA55C /* UIKit.framework */; };
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E188D1E192A7A1A00AE9CA0 /* ANHButtonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANHButtonMenu.h; path = ../ANHButtonMenu.h; sourceTree = "<group>"; };
+		2E188D1F192A7A1A00AE9CA0 /* ANHButtonMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANHButtonMenu.m; path = ../ANHButtonMenu.m; sourceTree = "<group>"; };
+		2E188D21192A7B3200AE9CA0 /* SKBButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKBButtonNode.h; path = ../SKBButtonNode.h; sourceTree = "<group>"; };
+		2E188D22192A7B3200AE9CA0 /* SKBButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKBButtonNode.m; path = ../SKBButtonNode.m; sourceTree = "<group>"; };
 		2E2C890918A68FE4005EA55C /* Anchor Handler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anchor Handler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C890C18A68FE4005EA55C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E2C890E18A68FE4005EA55C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +155,10 @@
 		2E2C891418A68FE4005EA55C /* Anchor Handler */ = {
 			isa = PBXGroup;
 			children = (
+				2E188D1E192A7A1A00AE9CA0 /* ANHButtonMenu.h */,
+				2E188D1F192A7A1A00AE9CA0 /* ANHButtonMenu.m */,
+				2E188D21192A7B3200AE9CA0 /* SKBButtonNode.h */,
+				2E188D22192A7B3200AE9CA0 /* SKBButtonNode.m */,
 				7E3908DD18AAC7810020B124 /* SKTUtils.h */,
 				7E3908DE18AAC7810020B124 /* SKTUtils.mm */,
 				7E4D904E18B0AAFB00C46E18 /* VectorUtils.h */,
@@ -344,8 +354,10 @@
 				2E2C891F18A68FE4005EA55C /* AppDelegate.m in Sources */,
 				2E2C896418A695EB005EA55C /* AnchorHandler.m in Sources */,
 				2E2C891B18A68FE4005EA55C /* main.m in Sources */,
+				2E188D23192A7B3200AE9CA0 /* SKBButtonNode.m in Sources */,
 				7E3908DF18AAC7810020B124 /* SKTUtils.mm in Sources */,
 				2ED56B5F18A79FAB0057F5B5 /* Winch.m in Sources */,
+				2E188D20192A7A1A00AE9CA0 /* ANHButtonMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
