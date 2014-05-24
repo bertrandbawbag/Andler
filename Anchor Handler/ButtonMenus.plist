@@ -4,37 +4,43 @@
 <dict>
 	<key>AnchorHandlerMenu</key>
 	<dict>
+		<key>button size</key>
+		<string></string>
 		<key>visible</key>
 		<true/>
 		<key>name</key>
 		<string>anchorhandlermenu</string>
 		<key>button spacing</key>
-		<integer>50</integer>
+		<integer>25</integer>
 		<key>buttons</key>
 		<array>
 			<dict>
+				<key>image</key>
+				<string>bb big emoticon</string>
 				<key>name</key>
 				<string>test1</string>
 				<key>size</key>
-				<string>{100,100}</string>
+				<string>{50,50}</string>
 				<key>text</key>
 				<string>Test One</string>
 				<key>colour</key>
 				<string>blue</string>
 				<key>opacity</key>
-				<string>0.5</string>
+				<integer>1</integer>
 			</dict>
 			<dict>
+				<key>image</key>
+				<string>AnchorHandler</string>
 				<key>name</key>
 				<string>test2</string>
 				<key>size</key>
-				<string>{100,100}</string>
+				<string>{50,50}</string>
 				<key>text</key>
 				<string>Test Two</string>
 				<key>colour</key>
 				<string>blue</string>
 				<key>opacity</key>
-				<string>0.5</string>
+				<integer>1</integer>
 			</dict>
 		</array>
 	</dict>

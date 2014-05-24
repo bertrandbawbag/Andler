@@ -47,6 +47,7 @@
         
         [self addChild:self.gameLayer];
         [self addChild:self.hudLayer];
+        
     }
 
     
