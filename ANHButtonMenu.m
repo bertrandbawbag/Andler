@@ -31,7 +31,7 @@
             
             SKTexture *texture = [SKTexture textureWithImageNamed:[buttonData objectForKey:@"image"]];
             
-            SKBButtonNode *newButton = [[SKBButtonNode alloc] initWithTextureNormal:texture selected:@"AnchorHandler"];
+            SKBButtonNode *newButton = [[SKBButtonNode alloc] initWithTextureNormal:texture selected:[SKTexture textureWithImageNamed:@"AnchorHandler"]];
             NSString *sizeString = [buttonData objectForKey:@"size"];
             newButton.size = CGSizeFromString(sizeString);
             newButton.title.text = [buttonData objectForKey:@"text"];

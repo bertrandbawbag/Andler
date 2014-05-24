@@ -62,6 +62,7 @@
     [_barge setUpAnchorPattern];
     
     _anchorHandler = [[AnchorHandler alloc] initWithImageNamed:@"AnchorHandler" position:CGPointMake(500, 450)];
+    _anchorHandler.delegate = self;
     [self.gameLayer addChild:_anchorHandler];
     
 // TODO: Remove these lines when done testing
@@ -149,6 +150,16 @@
 {
     [_barge didEvaluateActions];
     [_anchorHandler didEvaluateActions];
+}
+
+-(BOOL) showAnchorHandlerMenu
+{
+    
+    [self enumerateChildNodesWithName:@"anchorhandlermenu" usingBlock:^(SKNode *node, BOOL stop) {
+        node.hidden = NO;
+    }];
+    
+    return YES;
 }
 
 @end

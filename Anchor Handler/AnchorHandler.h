@@ -21,9 +21,16 @@ typedef enum ActivityModeType   {
     kAnchorDeckedMode
 } ActivityMode;
 
-@interface AnchorHandler : SKSpriteNode
+@protocol AnchorHandlerDelegate <NSObject>
+
+-(BOOL) showAnchorHandlerMenu;
+
+@end
+
+@interface AnchorHandler : SKSpriteNode <AnchorHandlerDelegate>
 
 
+@property (nonatomic) id delegate;
 
 @property (nonatomic) OperatingMode operatingMode;             // holdstation, move to point, transittopoint
 @property (nonatomic) ActivityMode activityMode;      // recover anchor, move anchor, standby
@@ -43,6 +50,8 @@ typedef enum ActivityModeType   {
 -(void) holdStationAtPoint;
 
 -(BOOL) recoverAnchor: (Anchor *) anchor;
+
+
 
 
 @end
