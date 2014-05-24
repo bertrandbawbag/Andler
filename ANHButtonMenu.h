@@ -10,4 +10,10 @@
 
 @interface ANHButtonMenu : SKNode
 
+@property (nonatomic, strong) NSMutableArray *buttons;
+@property (nonatomic) BOOL visible;
+
+- (id)initWithContentsOfPList: (NSString *) plistPath;
+
+
 @end

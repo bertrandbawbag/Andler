@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AnchorHandlerMenu</key>
+	<dict>
+		<key>visible</key>
+		<true/>
+		<key>name</key>
+		<string>anchorhandlermenu</string>
+		<key>button spacing</key>
+		<integer>50</integer>
+		<key>buttons</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>test1</string>
+				<key>size</key>
+				<string>{100,100}</string>
+				<key>text</key>
+				<string>Test One</string>
+				<key>colour</key>
+				<string>blue</string>
+				<key>opacity</key>
+				<string>0.5</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>test2</string>
+				<key>size</key>
+				<string>{100,100}</string>
+				<key>text</key>
+				<string>Test Two</string>
+				<key>colour</key>
+				<string>blue</string>
+				<key>opacity</key>
+				<string>0.5</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

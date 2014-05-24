@@ -35,6 +35,7 @@
 		7E3908DF18AAC7810020B124 /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E3908DE18AAC7810020B124 /* SKTUtils.mm */; };
 		7E4D905018B0AD0D00C46E18 /* VectorUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D904F18B0AD0D00C46E18 /* VectorUtils.mm */; };
 		7EB402A618D4C3E500C6C544 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB402A518D4C3E500C6C544 /* Weather.m */; };
+		7EC3B4C0192AB231007544AC /* ButtonMenus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC3B4BF192AB231007544AC /* ButtonMenus.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		7E4D904F18B0AD0D00C46E18 /* VectorUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VectorUtils.mm; sourceTree = "<group>"; };
 		7EB402A418D4C3E500C6C544 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		7EB402A518D4C3E500C6C544 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		7EC3B4BF192AB231007544AC /* ButtonMenus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ButtonMenus.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		2E2C891418A68FE4005EA55C /* Anchor Handler */ = {
 			isa = PBXGroup;
 			children = (
+				7EC3B4BF192AB231007544AC /* ButtonMenus.plist */,
 				2E188D1E192A7A1A00AE9CA0 /* ANHButtonMenu.h */,
 				2E188D1F192A7A1A00AE9CA0 /* ANHButtonMenu.m */,
 				2E188D21192A7B3200AE9CA0 /* SKBButtonNode.h */,
@@ -289,7 +292,7 @@
 		2E2C890118A68FE4005EA55C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Brian;
 				TargetAttributes = {
 					2E2C893018A68FE4005EA55C = {
@@ -324,6 +327,7 @@
 				2E2C891918A68FE4005EA55C /* InfoPlist.strings in Resources */,
 				2E2C892C18A68FE4005EA55C /* Images.xcassets in Resources */,
 				2E2C892218A68FE4005EA55C /* Main.storyboard in Resources */,
+				7EC3B4C0192AB231007544AC /* ButtonMenus.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +415,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -451,7 +454,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -514,7 +516,6 @@
 		2E2C894618A68FE4005EA55C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Anchor Handler.app/Anchor Handler";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -537,7 +538,6 @@
 		2E2C894718A68FE4005EA55C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Anchor Handler.app/Anchor Handler";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

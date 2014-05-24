@@ -7,7 +7,23 @@
 //
 
 #import "ANHButtonMenu.h"
+#import "SKBButtonNode.h"
 
 @implementation ANHButtonMenu
+{
+    NSDictionary *_dictionaryFromPList;
+}
+
+- (id)initWithContentsOfPList:(NSString *)plistPath
+{
+    if ([super init]) {
+        
+        _dictionaryFromPList = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    }
+    
+    NSLog(@"%@", _dictionaryFromPList.description);
+    
+    return self;
+}
 
 @end

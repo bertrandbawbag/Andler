@@ -11,6 +11,7 @@
 #import "Barge.h"
 #import "AnchorHandler.h"
 #import "Weather.h"
+#import "ANHButtonMenu.h"
 
 
 @interface MyScene ()
@@ -61,6 +62,13 @@
     
     _anchorHandler = [[AnchorHandler alloc] initWithImageNamed:@"AnchorHandler" position:CGPointMake(500, 450)];
     [self.gameLayer addChild:_anchorHandler];
+    
+// TODO: Remove these lines when done testing
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ButtonMenus" ofType:@"plist"];
+    ANHButtonMenu *buttonMenu = [[ANHButtonMenu alloc] initWithContentsOfPList:plistPath];
+    
+    [self.hudLayer addChild:buttonMenu];
 
 }
 /**
