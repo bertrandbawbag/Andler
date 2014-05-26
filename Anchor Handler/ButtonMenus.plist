@@ -17,28 +17,48 @@
 		<key>buttons</key>
 		<array>
 			<dict>
+				<key>imagepressed</key>
+				<string>transittopointpressed</string>
 				<key>image</key>
-				<string>bb big emoticon</string>
+				<string>transittopoint</string>
 				<key>name</key>
-				<string>test1</string>
+				<string>transit</string>
 				<key>size</key>
 				<string>{50,50}</string>
 				<key>text</key>
-				<string>Test One</string>
+				<string>Transit</string>
 				<key>colour</key>
 				<string>blue</string>
 				<key>opacity</key>
 				<integer>1</integer>
 			</dict>
 			<dict>
+				<key>imagepressed</key>
+				<string>holdstationpressed</string>
 				<key>image</key>
-				<string>AnchorHandler</string>
+				<string>holdstation</string>
 				<key>name</key>
-				<string>test2</string>
+				<string>holdstation</string>
 				<key>size</key>
 				<string>{50,50}</string>
 				<key>text</key>
-				<string>Test Two</string>
+				<string>Station</string>
+				<key>colour</key>
+				<string>blue</string>
+				<key>opacity</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>imagepressed</key>
+				<string>holdheadingpressed</string>
+				<key>image</key>
+				<string>holdheading</string>
+				<key>name</key>
+				<string>holdheading</string>
+				<key>size</key>
+				<string>{50,50}</string>
+				<key>text</key>
+				<string>Heading</string>
 				<key>colour</key>
 				<string>blue</string>
 				<key>opacity</key>
