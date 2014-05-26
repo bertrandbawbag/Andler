@@ -7,7 +7,9 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "AnchorHandler.h"
 
-@interface MyScene : SKScene
+
+@interface MyScene : SKScene <AnchorHandlerDelegate>
 
 @end

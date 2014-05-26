@@ -35,6 +35,8 @@
             NSString *sizeString = [buttonData objectForKey:@"size"];
             newButton.size = CGSizeFromString(sizeString);
             newButton.title.text = [buttonData objectForKey:@"text"];
+            newButton.title.fontColor = [SKColor blackColor];
+            newButton.title.fontSize = [(NSNumber *) [_dictionaryOfAnchorHandlerData objectForKey:@"button font size"] floatValue];
             newButton.alpha =  [ (NSNumber *)[buttonData objectForKey:@"opacity"] floatValue];
             
             newButton.position = CGPointMake(buttonX, spacing);

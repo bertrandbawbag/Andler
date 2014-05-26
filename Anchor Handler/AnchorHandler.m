@@ -173,13 +173,15 @@ What can my anchor handler do?
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
+    NSLog(@"%s %d %s %s", __FILE__, __LINE__, __PRETTY_FUNCTION__, __FUNCTION__);
+
+    [self.delegate showAnchorHandlerMenu];
 }
 
 -(void) notificationOfTouchReceived: (NSNotification *) notification
 {
     NSLog(@"tapInScene notification received in node type %@", [notification.object class]);
-    
+
 }
 
 @end

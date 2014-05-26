@@ -4,6 +4,8 @@
 <dict>
 	<key>AnchorHandlerMenu</key>
 	<dict>
+		<key>button font size</key>
+		<integer>10</integer>
 		<key>button size</key>
 		<string></string>
 		<key>visible</key>

@@ -27,10 +27,10 @@ typedef enum ActivityModeType   {
 
 @end
 
-@interface AnchorHandler : SKSpriteNode <AnchorHandlerDelegate>
+@interface AnchorHandler : SKSpriteNode
 
 
-@property (nonatomic) id delegate;
+@property (nonatomic) id <AnchorHandlerDelegate> delegate;
 
 @property (nonatomic) OperatingMode operatingMode;             // holdstation, move to point, transittopoint
 @property (nonatomic) ActivityMode activityMode;      // recover anchor, move anchor, standby

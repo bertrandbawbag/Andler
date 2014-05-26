@@ -154,8 +154,9 @@
 
 -(BOOL) showAnchorHandlerMenu
 {
-    
-    [self enumerateChildNodesWithName:@"anchorhandlermenu" usingBlock:^(SKNode *node, BOOL stop) {
+    NSLog(@"%s %d %s %s", __FILE__, __LINE__, __PRETTY_FUNCTION__, __FUNCTION__);
+
+    [self enumerateChildNodesWithName:@"anchorhandlermenu" usingBlock:^(SKNode *node, BOOL *stop) {
         node.hidden = NO;
     }];
     
