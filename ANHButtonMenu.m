@@ -26,6 +26,8 @@
         
         CGFloat spacing = [(NSNumber *)[_dictionaryOfAnchorHandlerData objectForKey:@"button spacing"] floatValue] ;
         CGFloat buttonX = spacing;
+        NSString *sizeString = [_dictionaryOfAnchorHandlerData objectForKey:@"button size"];
+
         
         for (NSDictionary *buttonData in _arrayOfButtonData) {
             
@@ -33,7 +35,6 @@
             SKTexture *texturePressed = [SKTexture textureWithImageNamed:[buttonData objectForKey:@"imagepressed"]];
             
             SKBButtonNode *newButton = [[SKBButtonNode alloc] initWithTextureNormal:texture selected:texturePressed];
-            NSString *sizeString = [buttonData objectForKey:@"size"];
             newButton.size = CGSizeFromString(sizeString);
             newButton.title.text = [buttonData objectForKey:@"text"];
             newButton.title.fontColor = [SKColor blackColor];

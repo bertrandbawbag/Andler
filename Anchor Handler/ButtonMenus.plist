@@ -7,15 +7,31 @@
 		<key>button font size</key>
 		<integer>10</integer>
 		<key>button size</key>
-		<string></string>
+		<string>{44,25}</string>
 		<key>visible</key>
 		<true/>
 		<key>name</key>
 		<string>anchorhandlermenu</string>
 		<key>button spacing</key>
-		<integer>25</integer>
+		<integer>10</integer>
 		<key>buttons</key>
 		<array>
+			<dict>
+				<key>imagepressed</key>
+				<string>transitwithheadingpressed</string>
+				<key>image</key>
+				<string>transitwithheading</string>
+				<key>name</key>
+				<string>transitwithheading</string>
+				<key>size</key>
+				<string>{50,50}</string>
+				<key>text</key>
+				<string>DP Transit</string>
+				<key>colour</key>
+				<string>blue</string>
+				<key>opacity</key>
+				<integer>1</integer>
+			</dict>
 			<dict>
 				<key>imagepressed</key>
 				<string>transittopointpressed</string>
@@ -59,6 +75,38 @@
 				<string>{50,50}</string>
 				<key>text</key>
 				<string>Heading</string>
+				<key>colour</key>
+				<string>blue</string>
+				<key>opacity</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>imagepressed</key>
+				<string>pickupanchorpressed</string>
+				<key>image</key>
+				<string>pickupanchor</string>
+				<key>name</key>
+				<string>pickupanchor</string>
+				<key>size</key>
+				<string>{50,50}</string>
+				<key>text</key>
+				<string>Pick Anchor</string>
+				<key>colour</key>
+				<string>blue</string>
+				<key>opacity</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>imagepressed</key>
+				<string>liveanchorpressed</string>
+				<key>image</key>
+				<string>liveanchor</string>
+				<key>name</key>
+				<string>liveanchor</string>
+				<key>size</key>
+				<string>{44,25}</string>
+				<key>text</key>
+				<string>Live Anchor</string>
 				<key>colour</key>
 				<string>blue</string>
 				<key>opacity</key>

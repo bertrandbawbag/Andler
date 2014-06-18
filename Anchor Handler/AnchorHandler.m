@@ -24,7 +24,15 @@ What can my anchor handler do?
 
 #import "AnchorHandler.h"
 
+@interface AnchorHandler()
+
+@property (nonatomic, strong) UIToolbar *buttonMenu;
+@property (nonatomic, strong) UIButton *button;
+
+@end
+
 @implementation AnchorHandler
+
 {
     CGMutablePathRef _pathToFollow;
 }
@@ -41,6 +49,32 @@ What can my anchor handler do?
 
         self.maxThrustForce = 50;
         [self setUpPhysics];
+        
+//        self.buttonMenu = [[UIToolbar alloc] init];
+//        self.buttonMenu.barTintColor = [UIColor redColor];
+//        
+//        UIBarButtonItem *button1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(toolbarItemPressed:)];
+//        UIBarButtonItem *button2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(toolbarItemPressed:)];
+//        UIBarButtonItem *button3 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(toolbarItemPressed:)];
+//
+//        
+//        NSArray *buttonArray = @[button1, button2, button3];
+//        [self.buttonMenu setItems:buttonArray animated:YES];
+        
+        
+    // the scene does not exist yet
+        
+        self.button = [[UIButton alloc] init];
+        self.button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [self.button addTarget:self action:@selector(toolbarItemPressed:) forControlEvents:UIControlEventTouchDown];
+        [self.button setTitle:@"TEST" forState:UIControlStateNormal];
+        self.button.layer.anchorPoint = self.position;
+        self.button.frame = CGRectMake(self.position.x, self.position.y, 50, 100);
+        
+
+        
+
+        
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationOfTouchReceived:) name:@"tapInScene" object:nil];
 
     }
@@ -68,6 +102,8 @@ What can my anchor handler do?
     if (self.activityMode == kRecoverAnchorActivityMode) {
         [self recoverAnchor:self.targetAnchor];
     }
+    
+    // self.button.layer.anchorPoint = self.position;
     
 
     
@@ -175,13 +211,25 @@ What can my anchor handler do?
 {
     NSLog(@"%s %d %s %s", __FILE__, __LINE__, __PRETTY_FUNCTION__, __FUNCTION__);
 
+
     [self.delegate showAnchorHandlerMenu];
 }
 
 -(void) notificationOfTouchReceived: (NSNotification *) notification
 {
     NSLog(@"tapInScene notification received in node type %@", [notification.object class]);
+    
+    
+    [self.scene.view addSubview:self.button];
 
+}
+
+-(void) toolbarItemPressed: (id) sender
+{
+    NSLog(@"%s %d %s %s", __FILE__, __LINE__, __PRETTY_FUNCTION__, __FUNCTION__);
+
+    UIButton *button = (UIButton *) sender;
+    NSLog(@"%@", button.description);
 }
 
 @end

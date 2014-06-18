@@ -70,7 +70,18 @@
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ButtonMenus" ofType:@"plist"];
     ANHButtonMenu *buttonMenu = [[ANHButtonMenu alloc] initWithContentsOfPList:plistPath];
     
-    [self.hudLayer addChild:buttonMenu];
+    buttonMenu.position = CGPointMake(100, 10);
+//    [self.hudLayer addChild:buttonMenu];
+    
+    UIButton *replay = [UIButton buttonWithType:UIButtonTypeCustom];
+    replay.tag = 321;
+    UIImage *replayImage = [UIImage imageNamed:@"anchor"];
+    [replay setImage:replayImage forState:UIControlStateNormal];
+    [replay addTarget:self action:@selector(replay) forControlEvents:UIControlEventTouchUpInside];
+    replay.frame = CGRectMake(self.size.width / 2.0 - replayImage.size.width / 2.0, self.size.height / 2.0 - replayImage.size.height / 2.0, replayImage.size.width, replayImage.size.height);
+
+    [self.view addSubview:replay];
+    
 
 }
 /**
@@ -161,6 +172,11 @@
     }];
     
     return YES;
+}
+
+-(void) replay
+{
+    NSLog(@"button pressed");
 }
 
 @end
